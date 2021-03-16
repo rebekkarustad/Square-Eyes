@@ -4,6 +4,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background: linear-gradient(#7EB3DE 30%, #fff);
 }
 
 header {
@@ -14,6 +15,15 @@ header img {
     height: 60px;
     margin: 10px 0 10px 20px;
     float: left;
+}
+h1 {
+    color: #373736;
+    font-size: 3em;
+}
+
+h2 {
+    color: #706F6F;
+    font-size: 2em;
 }
 
 nav {
@@ -45,3 +55,36 @@ nav a {
     float: right;
     margin-right: 20px;
 }
+.welcome {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+}
+.welcome h1,
+.welcome h2 {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+.cta {
+    background-color: #fff;
+    color: #373736;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 35px;
+    padding: 20px 30px;
+    margin: 5px;
+    text-decoration: none;
+    width: 90px;
+}
+
+.cta-right {
+  justify-self: start
+}
+
+  .cta-left {
+    justify-self: end;
+  }
