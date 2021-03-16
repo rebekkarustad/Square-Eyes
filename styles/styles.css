@@ -1,0 +1,47 @@
+body {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background: #7EB3DE;
+}
+
+header img {
+    height: 60px;
+    margin: 10px 0 10px 20px;
+    float: left;
+}
+
+nav {
+    max-width: 100%;
+}
+
+nav li {
+    background: #7EB3DE;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    color: #fff;
+    display: block;  
+    text-decoration: none;
+}
+
+.nav-left,
+.nav-right {
+    margin-top: 5px;
+}
+    
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+    margin-right: 20px;
+}
