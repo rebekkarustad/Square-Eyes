@@ -8,18 +8,18 @@ body {
 }
 
 header {
-    background: #7EB3DE;
-}
-
-.front {
-    background: none;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 header img {
     height: 60px;
-    margin: 10px 0 10px 20px;
-    float: left;
+    margin: 10px auto;
 }
+
 h1 {
     color: #373736;
     font-size: 3em;
@@ -35,11 +35,17 @@ h2 {
 
 nav {
     max-width: 100%;
+    display: none;
+    position: fixed;
+    top: 80px;
+    background-color: #7EB3DE;
+    left: 0;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     margin: 10px 25px;
+    padding: 10px;
 }
 
 nav a {
@@ -47,19 +53,29 @@ nav a {
     display: block;  
     text-decoration: none;
 }
-
-.nav-left,
-.nav-right {
-    margin-top: 5px;
-}
     
-.nav-left {
-    float: left;
+
+#hamburger-menu {
+    display: none;
 }
 
-.nav-right {
-    float: right;
-    margin-right: 20px;
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+.fa, 
+.fas {
+    font-size: 30px;
+    color: #fff;
+    margin: 10px;
+}
+
+.fa-search {
+    justify-self: end;
+    margin-right: 40px;
+}
+.fa-bars {
+    margin-left: 30px;
 }
 
 footer {
@@ -111,7 +127,7 @@ footer {
 .join {
     margin: 400px auto;
     align-items: center;
-    max-width: 1000px;
+    max-width: 80%;
 }
 
 .watch, 
@@ -172,4 +188,35 @@ footer {
 }
 .join h2 {
     margin: 30px;
+}
+
+@media (min-width: 1000px) {
+    nav {
+        display: block;
+    }
+    header label {
+        display: none;
+        float: left;
+      }
+      .fa-search {
+        display: none;
+    }
+    .nav li {
+    display: inline-block;
+}
+    .nav-left {
+        float: left;
+    }
+    
+    .nav-right {
+        float: right;
+        margin-right: 20px;
+    }
+    .watch,
+    .produce,
+    .join {
+        margin: 400px auto;
+        align-items: center;
+        max-width: 900px;
+    }
 }
