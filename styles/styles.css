@@ -29,8 +29,7 @@ h1 {
 h2 {
   color: #706f6f;
   font-size: 1.7em;
-  font-family: montserrat semibold;
-  margin: 0;
+  margin: 20px;
 }
 
 nav {
@@ -38,18 +37,21 @@ nav {
   display: none;
   position: fixed;
   top: 80px;
-  background-color: #7eb3de;
+  background-color: #fff;
   left: 0;
+  font-size: 1.3em;
 }
-
+nav ul {
+  margin: 0 40px 0 0;
+  padding-inline-start: 0;
+}
 nav li {
   display: block;
   margin: 10px 25px;
-  padding: 10px;
+  padding: 10px 0;
 }
-
 nav a {
-  color: #fff;
+  color: #7eb3de;
   display: block;
   text-decoration: none;
 }
@@ -62,6 +64,9 @@ nav a {
   display: block;
 }
 
+.active {
+  text-decoration: underline;
+}
 .fa,
 .fas {
   font-size: 30px;
@@ -80,9 +85,38 @@ nav a {
 footer {
   background-color: #7eb3de;
   color: #fff;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   margin: 90px 0 0 0;
+  font-size: 0.9em;
+}
+
+.footer__nav {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.footer__nav ul {
+  margin: 0px;
+}
+
+.footer__nav li {
+  display: block;
+  padding: 10px;
+}
+
+.footer a,
+.footer__nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__bottom {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  margin: 10px auto;
 }
 
 /*Home page*/
@@ -225,30 +259,38 @@ footer {
     justify-content: start;
   }
   header img {
-    margin: 15px 10px 10px 20px;
+    margin: 15px 0px 10px 20px;
     float: left;
-  }
-  nav {
-    display: block;
-    position: static;
   }
   header label {
     display: none;
   }
-  .fa-search {
-    display: none;
+  nav {
+    display: block;
+    position: static;
+    font-size: 1em;
+  }
+  nav ul {
+    margin: 17px 0px 0px 0px;
   }
   nav li {
     display: inline-block;
     margin: 10px 5px;
     padding: 10px;
   }
+  nav a {
+    color: #fff;
+  }
   .nav-left {
     float: left;
+    margin-left: 15px;
   }
   .nav-right {
     float: right;
     margin-right: 20px;
+  }
+  .fa-search {
+    visibility: hidden;
   }
   .watch,
   .produce,
