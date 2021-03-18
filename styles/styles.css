@@ -159,73 +159,28 @@ footer {
   font-size: 1.1em;
 }
 
-.join {
-  text-align: center;
-}
-.join a {
+.cta-blue {
   background-color: #7eb3de;
   color: #fff;
   font-size: 1.1em;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 35px;
-  padding: 17px 250px;
+  padding: 15px 100px;
   text-decoration: none;
+}
+
+.join {
+  max-width: 600px;
+  display: grid;
+  text-align: center;
+  min-width: 350px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 
 .join h2 {
   margin: 30px;
-}
-
-@media (min-width: 1000px) {
-  nav {
-    display: block;
-  }
-  header label {
-    display: none;
-    float: left;
-  }
-  .fa-search {
-    display: none;
-  }
-  .nav li {
-    display: inline-block;
-  }
-  .nav-left {
-    float: left;
-  }
-  .nav-right {
-    float: right;
-    margin-right: 20px;
-  }
-  header {
-    align-items: left;
-    margin: 0;
-  }
-  .watch,
-  .produce,
-  .join {
-    margin: 400px auto;
-    align-items: center;
-    max-width: 900px;
-  }
-  .watch div {
-    margin-left: 70px;
-  }
-  .produce div {
-    margin-right: 70px;
-    text-align: right;
-  }
-  .fa-search {
-    display: none;
-  }
-}
-
-@media (min-width: 900px) {
-  .watch,
-  .produce {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 500px) {
@@ -254,5 +209,62 @@ footer {
   .watch img,
   .produce img {
     max-width: 400px;
+  }
+}
+
+@media (min-width: 900px) {
+  .watch,
+  .produce {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    display: block;
+    align-items: stretch;
+    justify-content: start;
+  }
+  header img {
+    margin: 15px 10px 10px 20px;
+    float: left;
+  }
+  nav {
+    display: block;
+    position: static;
+  }
+  header label {
+    display: none;
+  }
+  .fa-search {
+    display: none;
+  }
+  nav li {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px;
+  }
+  .nav-left {
+    float: left;
+  }
+  .nav-right {
+    float: right;
+    margin-right: 20px;
+  }
+  .watch,
+  .produce,
+  .join {
+    margin: 400px auto;
+    align-items: center;
+    max-width: 900px;
+  }
+  .watch div {
+    margin-left: 70px;
+  }
+  .produce div {
+    margin-right: 70px;
+    text-align: right;
+  }
+  .cta-blue {
+    padding: 17px 150px;
   }
 }
