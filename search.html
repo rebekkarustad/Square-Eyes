@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search for films from independent film makers" />
+    <title>Square Eyes | Search</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/search.css" rel="stylesheet" />
+    <link href="styles/media.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e5a8aa5816.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+        </style>
+  </head>
+  <body>
+    <header>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <img class="logo" src="images/squareeyes-logo-small.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">For producers</a></li>
+                <li><a href="#">For viewers</a></li>
+            </ul>
+        </nav>
+        <nav class="nav__links2">
+            <ul>
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-search"></i>
+    </header>
+    <main>
+        <div class="search-wrapper">
+            <h1 class="header">Search</h1>
+            <section class="filter-wrapper">
+                <h3>Categories</h3>
+                <label>
+                    <input type="checkbox" name="category" value="action">
+                    <div class="box"></div>
+                    <span>Action<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="comedy">
+                    <div class="box"></div>
+                    <span>Comedy<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="drama">
+                    <div class="box"></div>
+                    <span>Drama<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="fantasy">
+                    <div class="box"></div>
+                    <span>Fantasy<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="horror">
+                    <div class="box"></div>
+                    <span>Horror<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="mystery">
+                    <div class="box"></div>
+                    <span>Mystery<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="romance">
+                    <div class="box"></div>
+                    <span>Romance<span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="thriller">
+                    <div class="box"></div>
+                    <span>Thriller<span>
+                </label>
+                <h3>Length</h3>
+                <label>
+                    <input type="radio" name="length" value="everything" checked="checked">
+                    <div class="circle"></div>
+                    <span>Everything<span>
+                </label>
+                <label>
+                    <input type="radio" name="length" value="less30">
+                    <div class="circle"></div>
+                    <span>Less than 30 minutes<span>
+                </label>
+                <label>
+                    <input type="radio" name="length" value="30-60">
+                    <div class="circle"></div>
+                    <span>Between 30 - 60 minutes<span>
+                </label>
+                <label>
+                    <input type="radio" name="length" value="60-120">
+                    <div class="circle"></div>
+                    <span>Between 60 - 120 minutes<span>
+                </label>
+                <label>
+                    <input type="radio" name="length" value="more120">
+                    <div class="circle"></div>
+                    <span>More than 120 minutes<span>
+                </label>
+    
+                <h3>Views</h3>
+                <label>
+                    <input type="radio" name="views" value="All" checked="checked">
+                    <div class="circle"></div>
+                    <span>All<span>
+                </label>
+                <label>
+                    <input type="radio" name="views" value="1-500">
+                    <div class="circle"></div>
+                    <span>0 - 500<span>
+                </label>
+                <label>
+                    <input type="radio" name="views" value="500-1000">
+                    <div class="circle"></div>
+                    <span>500 - 1 000<span>
+                </label>
+                <label>
+                    <input type="radio" name="views" value="1000-5000">
+                    <div class="circle"></div>
+                    <span>1 000 - 5 000<span>
+                </label>
+                <label>
+                    <input type="radio" name="views" value="5000-10000">
+                    <div class="circle"></div>
+                    <span>5 000 - 10 000<span>
+                </label>
+                <label>
+                    <input type="radio" name="views" value="10000-50000">
+                    <div class="circle"></div>
+                    <span>10 000 - 50 000<span>
+                </label>
+                <label>
+                    <input type="radio" name="views" value="more50000">
+                    <div class="circle"></div>
+                    <span>More than 50 000<span>
+                </label>
+            </section>
+            
+            <section class="search">
+                <label for="search"></label>
+                <input type="search" id="search" name="search" placeholder="Search">
+            </section>
+            <section class="showing">
+                <p>Showing 4 of 814 results for <strong>Monday</strong></p>
+            </section>
+            <section class="content">
+                <a href="film-page.html"><img src="images/movie1-400.jpg" /></a>
+                <section class="film">
+                    <h2>5 days from Monday</h2>
+                    <p class="smallest">1.4k views | 02.02.21</p>
+                    <p class="description">What makes a day? And when does all the days go into one?</p>
+                    <div class="price">
+                      <p class="price__text">$5 per view</p>
+                      <p class="price__text"><a href="film-page.html">More info >></a></p>
+                    </div>
+                </section>
+            </section>
+            <section class="content">
+                <a href="film-page.html"><img src="images/movie2-400.jpg" /></a>
+                <section class="film">
+                    <h2>Monday never comes</h2>
+                    <p class="smallest">3.1K views | 02.11.20</p>
+                    <p class="description">The story of a girl trying to find her way through the ever lasting life</p>
+                    <div class="price">
+                      <p class="price__text">$3 per view</p>
+                      <p class="price__text"><a href="film-page.html">More info >></a></p>
+                    </div>
+                </section>
+            </section>
+            <section class="content">
+                <a href="film-page.html"><img src="images/movie3-400.jpg" /></a>
+                <section class="film">
+                    <h2>Monday, Monday</h2>
+                    <p class="smallest">131 views | 01.06.20</p>
+                    <p class="description">What makes a day? And when does all the days go into one?</p>
+                    <div class="price">
+                      <p class="price__text">$2 per view</p>
+                      <p class="price__text"><a href="#">More info >></a></p>
+                    </div>
+                </section>
+            </section>
+            <section class="content">
+                <a href="film-page.html"><img src="images/movie4-400.jpg" /></a>
+                <section class="film">
+                    <h2>Monday morning Jazz</h2>
+                    <p class="smallest">113 views | 05.01.20</p>
+                    <p class="description">What is better than a Monday with Jazz. For Natalie this may turn out to be fatal. Or worse.</p>
+                    <div class="price">
+                      <p class="price__text">$5 per view</p>
+                      <p class="price__text"><a href="#">More info >></a></p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer> 
+        <section class="footer__nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help Center</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+            </ul>
+            <div class="footer__bottom">
+                <p>&copy; 2021 Square Eyes</p>
+            </div>
+        </section>
+    </footer>
+  </body>
+</html>

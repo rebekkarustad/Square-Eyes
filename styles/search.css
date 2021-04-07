@@ -1,0 +1,160 @@
+.search-wrapper {
+  max-width: 300px;
+  margin: 20px 3%;
+  gap: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+}
+.search-wrapper h1 {
+  grid-column: -1/1;
+}
+
+.search input {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid var(--dark-blue);
+  padding: 0 12px;
+}
+
+.showing p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-wrapper {
+  display: none;
+  grid-row-start: 2;
+  grid-row-end: 8;
+}
+
+/* Film-info */
+
+.content {
+  max-width: 300px;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  width: 300px;
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.film h2 {
+  font-size: 1.6rem;
+}
+
+.smallest {
+  font-size: 0.9rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__text {
+  font-size: 1.2rem;
+}
+.price a {
+  color: var(--dark-grey);
+}
+
+/* Checkbox */
+
+span {
+  color: var(--dark-grey);
+  font-size: 1rem;
+}
+
+input {
+  display: none;
+}
+
+.filter-wrapper label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 10px 0;
+}
+
+label .box {
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--dark-grey);
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: 3px;
+}
+
+.filter-wrapper label input:checked + .box {
+  border-color: var(--light-blue);
+}
+
+.filter-wrapper label input:checked + .box + span {
+  color: var(--light-blue);
+}
+
+.filter-wrapper label .box::before {
+  content: "";
+  height: 12px;
+  width: 4px;
+  position: absolute;
+  left: 5px;
+  top: -1px;
+  border: solid var(--light-blue);
+  border-width: 0 2px 2px 0;
+  transform: scale(0);
+}
+
+.filter-wrapper label input:checked + .box::before {
+  transform: scale(1) rotate(45deg);
+}
+
+/* Circle */
+
+label .circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-grey);
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: 4px;
+}
+
+.filter-wrapper label input:checked + .circle {
+  border-color: var(--light-blue);
+}
+
+.filter-wrapper label input:checked + .circle + span {
+  color: var(--light-blue);
+}
+
+.filter-wrapper label .circle::before {
+  content: "";
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background-color: var(--light-blue);
+  transform: scale(0);
+}
+
+.filter-wrapper label input:checked + .circle::before {
+  transform: scale(1) rotate(45deg);
+}
