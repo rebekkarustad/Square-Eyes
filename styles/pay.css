@@ -1,0 +1,162 @@
+header {
+  background-color: var(--light);
+  justify-content: flex-end !important;
+}
+
+footer {
+  display: none;
+}
+
+.fa-times {
+  visibility: visible !important;
+  color: var(--light-blue);
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.payment {
+  margin: 20px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment h1 {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.payment h2 {
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.payment .choose {
+  font-size: 1.3rem;
+  margin: 0 auto;
+}
+
+.payment a {
+  color: var(--dark-blue);
+  width: 286px;
+  padding: 5px;
+  border: 2px solid var(--dark-blue);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 40px;
+}
+
+.payment a:hover {
+  color: var(--light);
+  background-color: var(--dark-blue);
+}
+
+.card img {
+  grid-area: card;
+  width: 120px;
+  align-self: center;
+}
+
+label {
+  grid-area: radio;
+  align-self: center;
+}
+
+.name {
+  grid-area: name;
+}
+
+.number {
+  grid-area: number;
+}
+
+.expiration {
+  grid-area: expiration;
+}
+
+.pin {
+  grid-area: pin;
+}
+
+.card {
+  display: grid;
+
+  gap: 0 5px;
+  width: 266px;
+  border: 2px solid var(--dark-blue);
+  border-radius: 30px;
+  padding: 15px;
+  grid-template-columns: auto auto 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "radio card name name"
+    "radio card number number"
+    "radio card expiration pin";
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.payment-confirmed {
+  margin: 250px auto;
+  width: 300px;
+  display: flex;
+  gap: 20px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-confirmed a {
+  color: var(--light);
+  background-color: var(--dark-blue);
+  width: 280px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
+
+/* Circle */
+
+input {
+  display: none;
+}
+
+label .circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-grey);
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: 4px;
+}
+
+.card label input:checked + .circle {
+  border-color: var(--light-blue);
+}
+
+.card label input:checked + .circle + span {
+  color: var(--light-blue);
+}
+
+.card label .circle::before {
+  content: "";
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background-color: var(--light-blue);
+  transform: scale(0);
+}
+
+.card label input:checked + .circle::before {
+  transform: scale(1) rotate(45deg);
+}
