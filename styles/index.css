@@ -7,6 +7,7 @@ header {
 }
 .welcome h1 {
   grid-area: heading;
+  text-align: center;
 }
 .welcome h2 {
   grid-area: under-heading;
