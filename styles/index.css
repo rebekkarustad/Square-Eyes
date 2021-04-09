@@ -22,8 +22,8 @@ header {
 }
 
 .welcome {
-  max-width: 300px;
-  margin: 70px auto;
+  max-width: 350px;
+  margin: 0px auto;
   text-align: center;
   display: grid;
   row-gap: 15px;
@@ -41,8 +41,8 @@ header {
 .join {
   row-gap: 20px;
   flex-direction: column;
-  max-width: 300px;
-  margin: 300px auto;
+  max-width: 350px;
+  margin: 350px auto;
 }
 
 .watch,
@@ -58,13 +58,12 @@ header {
 
 .watch img,
 .produce img {
-  width: 300px;
+  width: 400px;
   border-radius: 30px;
 }
 
 .watch a,
 .produce a {
-  width: 300px;
   border-radius: 30px;
   color: var(--dark-grey);
 }
