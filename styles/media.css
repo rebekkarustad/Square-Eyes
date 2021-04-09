@@ -2,6 +2,7 @@
   /* Search */
   .search-wrapper {
     max-width: 900px;
+    margin: 0 auto;
   }
   .content {
     max-width: 900px;
@@ -30,9 +31,9 @@
 @media (min-width: 800px) {
   /* Index */
   .welcome {
-    max-width: 700px;
+    max-width: 750px;
     gap: 15px;
-    margin: 170px auto;
+    margin: 250px auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -43,7 +44,7 @@
 
   .watch,
   .produce {
-    max-width: 700px;
+    max-width: 750px;
     gap: 15px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
@@ -67,7 +68,8 @@
     grid-column-start: 2;
   }
   .join {
-    max-width: 500px;
+    max-width: 650px;
+    align-items: center;
   }
 
   /* Footer */
