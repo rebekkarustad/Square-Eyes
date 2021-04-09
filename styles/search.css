@@ -1,6 +1,6 @@
 .search-wrapper {
   max-width: 300px;
-  margin: 20px 3%;
+  margin: 40px auto;
   gap: 10px 20px;
   display: grid;
   grid-template-columns: 1fr;
