@@ -19,7 +19,7 @@
 
 .messages a,
 .change a,
-ul a {
+.other ul a {
   color: var(--dark-blue);
 }
 
