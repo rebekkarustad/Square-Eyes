@@ -9,7 +9,7 @@ footer {
 
 .fa-times {
   visibility: visible !important;
-  color: var(--light-blue);
+  color: var(--dark-blue);
   font-size: 3rem;
   padding: 10px;
 }
