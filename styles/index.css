@@ -21,9 +21,9 @@ header {
   grid-area: button-right;
 }
 
-.account-wrap {
-  width: 350px;
-  margin: 0px auto;
+.index-wrap {
+  width: 300px;
+  margin: 100px auto;
 }
 
 .welcome {
@@ -56,11 +56,12 @@ header {
 
 .join {
   display: flex;
+  text-align: center;
 }
 
 .watch img,
 .produce img {
-  width: 400px;
+  width: 100%;
   border-radius: 30px;
 }
 

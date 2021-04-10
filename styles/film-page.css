@@ -36,19 +36,19 @@
   row-gap: 10px;
 }
 
-.profile {
+.profile-follow {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
 
-.profile img {
+.profile-follow img {
   height: 30px;
   width: 30px;
   border-radius: 50%;
 }
 
-.profile a {
+.profile-follow a {
   font-size: 0.8rem;
   color: var(--dark-blue);
   text-decoration: none;
@@ -57,7 +57,7 @@
   padding: 2px 15px;
 }
 
-.profile a:hover {
+.profile-follow a:hover {
   color: var(--light);
   background-color: var(--dark-blue);
 }
@@ -93,7 +93,8 @@
   grid-column: -1/1;
 }
 
-.about h3 {
+.about h3,
+.comments__specific p {
   font-size: 1rem;
 }
 
@@ -114,8 +115,4 @@
   border-radius: 50%;
   grid-row-start: 1;
   grid-row-end: 3;
-}
-
-.comments__specific p {
-  font-size: 0.8rem;
 }

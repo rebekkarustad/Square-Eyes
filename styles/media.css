@@ -2,6 +2,7 @@
   /* Search */
   .search-wrapper {
     max-width: 900px;
+    margin: 20px 20px;
   }
   .content {
     max-width: 900px;
@@ -16,11 +17,11 @@
 
   /* Register */
   .form-wrapper {
-    width: 600px;
+    width: 500px;
   }
 
   .information-wrapper input {
-    width: 572px;
+    width: 472px;
   }
   /* Payment confirmed */
   .payment-confirmed {
@@ -30,7 +31,7 @@
 @media (min-width: 800px) {
   /* Index */
   .index-wrap {
-    width: 800px;
+    width: 750px;
     gap: 15px;
     margin: 250px auto;
     grid-template-columns: 1fr 1fr;
