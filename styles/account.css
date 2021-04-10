@@ -68,12 +68,10 @@ table th {
   margin-top: 15px;
 }
 
-table td {
+.change,
+table td,
+li {
   padding: 10px 0;
-}
-
-.change {
-  margin: 10px 0;
 }
 
 .other ul {
@@ -82,5 +80,4 @@ table td {
 
 li {
   display: block;
-  padding: 10px 0;
 }

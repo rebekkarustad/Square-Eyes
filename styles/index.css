@@ -64,6 +64,6 @@ header {
 
 .watch a,
 .produce a {
-  border-radius: 30px;
+  border-radius: 20px;
   color: var(--dark-grey);
 }
