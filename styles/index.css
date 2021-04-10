@@ -21,9 +21,12 @@ header {
   grid-area: button-right;
 }
 
-.welcome {
-  max-width: 350px;
+.account-wrap {
+  width: 350px;
   margin: 0px auto;
+}
+
+.welcome {
   text-align: center;
   display: grid;
   row-gap: 15px;
@@ -41,7 +44,6 @@ header {
 .join {
   row-gap: 20px;
   flex-direction: column;
-  max-width: 350px;
   margin: 350px auto;
 }
 

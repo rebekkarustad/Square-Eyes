@@ -29,8 +29,8 @@
 }
 @media (min-width: 800px) {
   /* Index */
-  .welcome {
-    max-width: 750px;
+  .index-wrap {
+    width: 800px;
     gap: 15px;
     margin: 250px auto;
     grid-template-columns: 1fr 1fr;
@@ -41,9 +41,13 @@
       "button-left button-right";
   }
 
+  .welcome {
+    width: 600px;
+    margin: 0 auto;
+  }
+
   .watch,
   .produce {
-    max-width: 750px;
     gap: 15px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
