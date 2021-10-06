@@ -1,0 +1,43 @@
+h1 {
+ text-align: center;
+ margin: 40px;
+}
+
+.form-error {
+ display: none;
+ color: red;
+ font-size: 0.9rem;
+}
+
+form {
+ max-width: 600px;
+ margin: 0 auto;
+ gap: 20px;
+}
+
+label {
+ gap: 4px;
+}
+
+form,
+label {
+ display: flex;
+ flex-direction: column;
+}
+
+input,
+textarea {
+ border-radius: 5px;
+ border: 2px solid var(--dark-blue);
+ font-size: 1.4rem;
+ padding: 5px;
+}
+
+button {
+ background-color: var(--dark-blue);
+ border: 0px;
+ color: #fff;
+ padding: 10px;
+ border-radius: 5px;
+ font-size: 1.2rem;
+}
