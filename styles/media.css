@@ -31,7 +31,7 @@
 @media (min-width: 800px) {
  /* Index */
  .index-wrap {
-  width: 750px;
+  width: 800px;
   gap: 15px;
   margin: 250px auto;
   grid-template-columns: 1fr 1fr;
@@ -50,8 +50,19 @@
  .watch,
  .produce {
   gap: 15px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, auto);
+  display: flex;
+  width: 330px;
+ }
+
+ .info-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+ }
+
+ .info-wrap img {
+  width: 100%;
  }
 
  .watch h3,
@@ -59,18 +70,6 @@
   margin-top: 25px;
  }
 
- .watch img {
-  grid-row-start: 1;
-  grid-row-end: 5;
- }
- .produce {
-  text-align: right;
- }
- .produce img {
-  grid-row-start: 1;
-  grid-row-end: 5;
-  grid-column-start: 2;
- }
  .join {
   max-width: 650px;
   align-items: center;

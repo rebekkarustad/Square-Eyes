@@ -1,72 +1,72 @@
 body {
-  background: linear-gradient(var(--light-blue), var(--light));
+ background: linear-gradient(var(--light-blue), var(--light));
 }
 
 header {
-  background-color: transparent;
+ background-color: transparent;
 }
 .welcome h1 {
-  grid-area: heading;
-  text-align: center;
+ grid-area: heading;
+ text-align: center;
 }
 .welcome h2 {
-  grid-area: under-heading;
+ grid-area: under-heading;
 }
 
 .cta-left {
-  grid-area: button-left;
+ grid-area: button-left;
 }
 
 .cta-right {
-  grid-area: button-right;
+ grid-area: button-right;
 }
 
 .index-wrap {
-  width: 300px;
-  margin: 100px auto;
+ width: 300px;
+ margin: 100px auto;
 }
 
 .welcome {
-  text-align: center;
-  display: grid;
-  row-gap: 15px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas:
-    "heading"
-    "under-heading"
-    "button-left"
-    "button-right";
+ text-align: center;
+ display: grid;
+ row-gap: 15px;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(4, auto);
+ grid-template-areas:
+  "heading"
+  "under-heading"
+  "button-left"
+  "button-right";
 }
 
 .watch,
 .produce,
 .join {
-  row-gap: 20px;
-  flex-direction: column;
-  margin: 350px auto;
+ row-gap: 20px;
+ flex-direction: column;
+ margin: 250px auto 0 auto;
 }
 
 .watch,
 .produce {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(4, auto);
 }
 
 .join {
-  display: flex;
-  text-align: center;
+ display: flex;
+ text-align: center;
 }
 
 .watch img,
 .produce img {
-  width: 100%;
-  border-radius: 30px;
+ width: 100%;
+ border-radius: 30px;
 }
 
 .watch a,
 .produce a {
-  border-radius: 20px;
-  color: var(--dark-grey);
+ border-radius: 20px;
+ color: var(--dark-grey);
 }
