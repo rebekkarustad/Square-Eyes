@@ -204,7 +204,7 @@
  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1150px) {
  /* Navigation */
  header {
   justify-content: flex-start;
@@ -234,8 +234,18 @@
  }
 
  .fa-shopping-cart {
+  display: block;
+  text-decoration: none;
   font-size: 1.3rem;
   color: var(--dark-grey);
+ }
+
+ .nav-cart {
+  display: none;
+ }
+
+ #counter {
+  display: block;
  }
 
  /* Film site */
