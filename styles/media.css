@@ -247,6 +247,10 @@
   display: block;
  }
 
+ .cart-wrap {
+  display: flex;
+ }
+
  /* Film site */
  .film-wrapper {
   width: 900px;

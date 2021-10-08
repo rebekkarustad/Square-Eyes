@@ -93,6 +93,10 @@ nav ul {
  text-decoration: underline;
 }
 
+.cart-wrap {
+ display: none;
+}
+
 /* Footer */
 
 footer {
