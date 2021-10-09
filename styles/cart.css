@@ -11,9 +11,10 @@ p {
  margin: 10px 0;
 }
 
-.cart-wrap {
+.cart-wrapping {
  max-width: 700px;
  margin: 40px auto;
+ padding: 20px;
 }
 
 .cart,

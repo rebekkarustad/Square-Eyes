@@ -249,6 +249,11 @@
 
  .cart-wrap {
   display: flex;
+  gap: 5px;
+ }
+
+ .hamburger-cart-wrap {
+  display: none;
  }
 
  /* Film site */

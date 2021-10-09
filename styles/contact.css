@@ -3,6 +3,11 @@ h1 {
  margin: 40px;
 }
 
+.form-wrap {
+ max-width: 700px;
+ padding: 20px;
+}
+
 .form-error {
  display: none;
  color: red;

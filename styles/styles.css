@@ -97,6 +97,12 @@ nav ul {
  display: none;
 }
 
+.hamburger-cart-wrap {
+ display: flex;
+ flex-direction: row;
+ gap: 5px;
+}
+
 /* Footer */
 
 footer {
@@ -157,7 +163,7 @@ p {
  font-size: 1.2rem;
  color: var(--dark-grey);
  font-weight: 500;
- line-height: 1.5;
+ line-height: 1.5em;
 }
 
 .cta {
@@ -192,8 +198,4 @@ p {
 .cta-dark-blue:hover {
  color: var(--dark-blue);
  background-color: var(--light);
-}
-
-#counter {
- margin-left: 5px;
 }
