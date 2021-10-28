@@ -1,4 +1,4 @@
-const baseUrl = "http://www.rebekkarustad.com/wp-json/wc/store/products"
+const baseUrl = "https://www.rebekkarustad.com/wp-json/wc/store/products"
 const productContainer = document.querySelector(".products");
 const perPage = document.querySelector(".per-page-selection");
 const categories = document.querySelectorAll(".categories")

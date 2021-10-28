@@ -1,4 +1,4 @@
-const baseUrl = "http://www.rebekkarustad.com/wp-json/wc/store/products/"
+const baseUrl = "https://www.rebekkarustad.com/wp-json/wc/store/products/"
 const detailContainer = document.querySelector(".film-details");
 
 const queryString = document.location.search;
