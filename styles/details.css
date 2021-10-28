@@ -1,0 +1,39 @@
+.film-wrap-details {
+ margin: 20px auto;
+ max-width: 900px;
+ display: grid;
+ column-gap: 20px;
+ grid-template-columns: 350px 550px;
+}
+
+.film-wrap-details img {
+ width: 350px;
+ grid-column-start: 1;
+ grid-row-start: 1;
+ grid-row-end: 8;
+}
+
+.cta-pay {
+ margin: 20px 0;
+ width: 300px;
+ color: var(--light);
+ background-color: var(--dark-blue);
+ border: 1px solid var(--dark-blue);
+ padding: 10px;
+ border-radius: 30px;
+ text-align: center;
+ text-decoration: none;
+}
+
+.cta-pay:hover {
+ background-color: var(--light);
+ color: var(--dark-blue);
+ border: 1px solid var(--dark-blue);
+ cursor: pointer;
+}
+
+.film__description {
+ display: flex;
+ flex-direction: column;
+ row-gap: 5px;
+}

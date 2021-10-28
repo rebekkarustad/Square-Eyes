@@ -1,0 +1,106 @@
+h1 {
+ grid-area: header;
+ font-size: 2.7rem;
+ margin: 0 0 30px 0;
+}
+
+.search-all {
+ grid-area: search;
+ display: flex;
+}
+
+.categories {
+ grid-area: categories;
+ display: flex;
+ flex-direction: column;
+ row-gap: 10px;
+}
+
+.products {
+ grid-area: products;
+ display: flex;
+ flex-direction: column;
+ row-gap: 20px;
+}
+
+.product {
+ display: grid;
+ grid-template-columns: 250px auto;
+ column-gap: 20px;
+}
+.product img {
+ width: 250px;
+}
+
+.per-page {
+ grid-area: per-page;
+ margin-bottom: 20px;
+}
+
+.per-page-selection {
+ width: 100px;
+}
+
+.price {
+ display: flex;
+ justify-content: space-between;
+}
+
+.price p {
+ font-size: 1.2rem;
+}
+
+.price a {
+ color: var(--dark-blue);
+}
+
+.product-description p {
+ font-size: 1rem;
+}
+
+.product-text {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.loader {
+ grid-area: loader;
+}
+
+.search-wrapper-all {
+ width: 900px;
+ margin: 30px auto;
+ display: grid;
+ grid-template-columns: 150px 750px;
+ grid-template-areas:
+  "header header"
+  "categories search"
+  "categories per-page"
+  "categories products"
+  "categories loader";
+}
+
+.search {
+ margin-bottom: 20px;
+}
+
+input[type="search"] {
+ width: 79%;
+ height: 40px;
+ border-radius: 10px 0 0 10px;
+ padding: 0 10px;
+ border: 2px solid var(--dark-blue);
+}
+
+.search-button {
+ position: relative;
+ background-color: var(--dark-blue);
+ color: var(--light);
+ border-radius: 0 10px 10px 0;
+ height: 40px;
+ width: 20%;
+ border: none;
+ outline: none;
+ left: -6px;
+}

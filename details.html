@@ -6,7 +6,7 @@
     <meta name="description" content="Search for films from independent film makers" />
     <title>Square Eyes | Search</title>
     <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/search2.css" rel="stylesheet" />
+    <link href="styles/details.css" rel="stylesheet" />
     <link href="styles/media.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/e5a8aa5816.js" crossorigin="anonymous"></script>
     <style>
@@ -38,56 +38,22 @@
         </nav>
         <nav class="nav__links2">
           <ul>
-            <li><a href="search.html" class="active">Search</a></li>
+            <li><a href="search.html">Search</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="register.html">Register</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html" class="nav-cart counter" id="">Cart (0)</a></li>
+            <li><a href="cart.html" class="nav-cart" id="hamburger-counter">Cart (0)</a></li>
           </ul>
         </nav>
         <div class="cart-wrap">
-          <a href="cart.html"><i class="fas fa-shopping-cart "></i></a><div class="counter">(0)</div>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a><div id="nav-counter">(0)</div>
         </div>
         <i class="fas fa-search"></i>
       </header>
     <main>
-      <div class="search-wrapper-all">
-        <h1>Search</h1>
-
-            <div class="categories">
-              <div>
-                <input type="radio" id="featured" class="category" name="category" value="true">
-                <label for="featured">Featured</label>
-              </div>
-              <div>
-                <input type="radio" id="drama" class="category" name="category" value="18">
-                  <label for="drama">Drama</label>
-              </div>
-              <div>
-                <input type="radio" id="mystery" class="category" name="category" value="19">
-                  <label for="mystery">Mystery</label>
-              </div>
-              <div>
-                <input type="radio" id="horror" class="category" name="category" value="17">
-                  <label for="horror">Horror</label>
-              </div>
-            </div>
-            <div class="search">
-              <input type="search" id="search-input" />
-              <button class="search-button">Search</button>
-          </div>
-            <div class="per-page">
-                <label for="">Number per page</label>
-                <select class="per-page-selection">
-                    <option value="1">One</option>
-                    <option value="3">Three</option>
-                    <option value="5">Five</option>
-                </select>
-            </div>
+        <div class="film-details">
             <div class="loader"></div>
-
-        <div class="products"></div>
-      </div>
+        </div> 
     </main>
     <footer> 
         <section class="footer__nav">
@@ -106,7 +72,8 @@
             </div>
         </section>
     </footer>
-    <script src="js/search.js"></script>
+    <script src="js/details.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/components/displayError.js"></script>
   </body>
 </html>
