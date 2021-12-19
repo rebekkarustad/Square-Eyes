@@ -1,18 +1,7 @@
 @import "import/variables.css";
 
-* {
- margin: 0;
- padding: 0;
- font-family: "Montserrat", sans-serif;
- box-sizing: border-box;
-}
-
-body {
- background-color: var(--light-blue);
-}
-
 header a {
- color: #fff;
+ color: var(--dark-blue);
  text-decoration: none;
 }
 
@@ -48,7 +37,7 @@ header a:hover {
 
 .menu-wrap {
  position: fixed;
- left: -100%;
+ left: -105%;
 }
 
 .logo-name {
@@ -125,7 +114,6 @@ li {
  .nav-menu-left,
  .nav-menu-right {
   position: initial;
-  background-color: transparent;
  }
 
  .nav-menu-left {
