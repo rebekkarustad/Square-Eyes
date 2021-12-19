@@ -195,58 +195,6 @@
 }
 
 @media (min-width: 1150px) {
- /* Navigation */
- header {
-  justify-content: flex-start;
- }
-
- nav {
-  display: block;
-  position: inherit;
-  background-color: transparent;
-  top: 0;
- }
-
- .nav__links li,
- .nav__links2 li {
-  display: inline-block;
-  width: auto;
-  margin: 0;
- }
-
- #hamburger-menu {
-  visibility: hidden;
- }
-
- .fa-bars,
- .fa-search {
-  visibility: hidden;
- }
-
- .fa-shopping-cart {
-  display: block;
-  text-decoration: none;
-  font-size: 1.3rem;
-  color: var(--dark-grey);
- }
-
- .nav-cart {
-  display: none;
- }
-
- #counter {
-  display: block;
- }
-
- .cart-wrap {
-  display: flex;
-  gap: 5px;
- }
-
- .hamburger-cart-wrap {
-  display: none;
- }
-
  /* Film site */
  .film-wrapper {
   width: 900px;

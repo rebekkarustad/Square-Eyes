@@ -1,0 +1,138 @@
+@import "import/variables.css";
+
+* {
+ margin: 0;
+ padding: 0;
+ font-family: "Montserrat", sans-serif;
+ box-sizing: border-box;
+}
+
+body {
+ background-color: var(--light-blue);
+}
+
+header a {
+ color: #fff;
+ text-decoration: none;
+}
+
+header a:hover {
+ color: var(--light-blue);
+}
+
+.nav-bar {
+ display: flex;
+ padding: 10px;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.nav-menu-left,
+.nav-menu-right {
+ position: fixed;
+ flex-direction: column;
+ width: 100%;
+ text-align: center;
+ gap: 20px;
+ padding: 20px;
+ background-color: var(--light-blue);
+}
+
+.nav-menu-left {
+ top: 85px;
+}
+
+.nav-menu-right {
+ top: 215px;
+}
+
+.menu-wrap {
+ position: fixed;
+ left: -100%;
+}
+
+.logo-name {
+ font-size: 30px;
+}
+
+.logo-name img {
+ height: 60px;
+}
+
+li {
+ display: block;
+ line-height: 2.5rem;
+}
+
+.hamburger {
+ cursor: pointer;
+}
+
+.line {
+ display: block;
+ width: 25px;
+ height: 3px;
+ margin: 5px;
+ background-color: #fff;
+}
+
+.hamburger.active .line:nth-child(2) {
+ opacity: 0;
+}
+
+.hamburger.active .line:nth-child(1) {
+ transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(3) {
+ transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-wrap.active {
+ left: 0;
+}
+
+.current {
+ text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+ li {
+  list-style: none;
+ }
+
+ .nav-bar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 1fr;
+ }
+ .hamburger {
+  display: none;
+ }
+ .menu-wrap {
+  position: relative;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+ .nav-menu-left li,
+ .nav-menu-right li {
+  display: inline-block;
+  padding: 0 15px;
+ }
+
+ .nav-menu-left,
+ .nav-menu-right {
+  position: initial;
+  background-color: transparent;
+ }
+
+ .nav-menu-left {
+  top: 0;
+  text-align: left;
+ }
+ .nav-menu-right {
+  text-align: right;
+ }
+}
